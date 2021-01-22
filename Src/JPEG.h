@@ -10,9 +10,9 @@
 #include "JPEG/jerror.h"
 #include "JPEG/jmorecfg.h"
 #else // !_WIN32
-#include <jpeglib.h>
-#include <jerror.h>
-#include <jmorecfg.h>
+#include "JPEG/jpeglib.h"
+#include "JPEG/jerror.h"
+#include "JPEG/jmorecfg.h"
 #endif // _WIN32
 
 struct my_error_mgr

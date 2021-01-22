@@ -265,6 +265,10 @@ struct StackTracer
 #else // !WINDOWS
 	static void Trace( void )
 	{
+	}
+/*
+	static void Trace( void )
+	{
 		static std::mutex mutex;
 		std::lock_guard< std::mutex > lock(mutex);
 
@@ -330,6 +334,7 @@ struct StackTracer
 
 		free( messages );
 	}
+*/
 #endif // WINDOWS
 };
 const char *StackTracer::exec;

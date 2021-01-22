@@ -6,5 +6,7 @@
 *.opensdf
 *.bat
 *.zip
+*.swp
 .vs/*
 /build/
+/build-ios/
