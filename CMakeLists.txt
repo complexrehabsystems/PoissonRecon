@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-#add_compile_options(-bigobj)
+add_compile_options(-bigobj)
 add_definitions(-DNOMINMAX)
 
 find_package(OpenMP)
@@ -54,3 +54,7 @@ add_library(poissonrecon ${LPR_SRC})
 
 #add_executable(SurfaceTrimmer Src/SurfaceTrimmer.cpp)
 #target_link_libraries(SurfaceTrimmer libpng libjpeg zlib)
+
+add_executable(lprTest Src/libPoissonReconTest.cpp)
+target_link_libraries(lprTest poissonrecon)
+
