@@ -1048,7 +1048,7 @@ void Execute( const AuxDataFactory &auxDataFactory )
 }
 #endif // !FAST_COMPILE
 
-int runPoissonRecon( int argc , char* argv[] )
+int runPoissonReconInternal( int argc , char* argv[] )
 {
 	Timer timer;
 #ifdef USE_SEG_FAULT_HANDLER
