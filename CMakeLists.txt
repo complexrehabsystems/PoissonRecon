@@ -56,5 +56,4 @@ add_library(poissonrecon ${LPR_SRC})
 #target_link_libraries(SurfaceTrimmer libpng libjpeg zlib)
 
 add_executable(lprTest Src/libPoissonReconTest.cpp)
-target_link_libraries(lprTest poissonrecon)
-
+target_link_libraries(lprTest poissonrecon libpng libjpeg zlib)
