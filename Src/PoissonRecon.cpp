@@ -61,6 +61,7 @@ enum NormalType
 	NORMALS_GRADIENTS ,
 	NORMALS_COUNT
 };
+
 const char* NormalsNames[] = { "none" , "samples" , "gradients" };
 
 cmdLineParameter< char* >

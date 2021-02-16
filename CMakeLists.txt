@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 #add_compile_options(-bigobj)
+add_compile_options(-Os -flto)
 add_definitions(-DNOMINMAX)
 
 find_package(OpenMP)
@@ -46,8 +47,8 @@ add_library(poissonrecon ${LPR_SRC})
 #add_executable(PointInterpolant Src/PointInterpolant.cpp)
 #target_link_libraries(PointInterpolant libpng libjpeg zlib)
 
-#add_executable(PoissonRecon Src/PoissonRecon.cpp)
-#target_link_libraries(PoissonRecon libpng libjpeg zlib)
+add_executable(PoissonRecon2 Src/PoissonRecon.cpp)
+target_link_libraries(PoissonRecon2 libpng libjpeg zlib)
 
 #add_executable(SSDRecon Src/SSDRecon.cpp)
 #target_link_libraries(SSDRecon libpng libjpeg zlib)

@@ -49,7 +49,7 @@ namespace PLY
 	template<> const std::string Traits< unsigned long long >::name="unsigned long long";
 
 	template<>
-	PlyProperty Face<          int       >::Properties[] = { PlyProperty( "vertex_indices" , PLY_INT       , PLY_INT       , offsetof( Face , vertices ) , 1 , PLY_INT , PLY_INT , offsetof( Face , nr_vertices ) ) };
+	PlyProperty Face<          int       >::Properties[] = { PlyProperty( "vertex_indices" , PLY_INT       , PLY_INT       , offsetof( Face , vertices ) , 1 , PLY_UCHAR , PLY_UCHAR , offsetof( Face , nr_vertices ) ) };
 	template<>
 	PlyProperty Face< unsigned int       >::Properties[] = { PlyProperty( "vertex_indices" , PLY_UINT      , PLY_UINT      , offsetof( Face , vertices ) , 1 , PLY_INT , PLY_INT , offsetof( Face , nr_vertices ) ) };
 	template<>
